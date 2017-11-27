@@ -24,8 +24,13 @@ class MainActivity : AppCompatActivity() {
 
         btnTakePhoto.setOnClickListener(View.OnClickListener {
             if(edtTextUser.text!=null && edtTextUser.text.toString()!=""){
-                var cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                startActivityForResult(cameraIntent,CAMERA_RESULT)
+                try{
+                    val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                    startActivityForResult(cameraIntent,CAMERA_RESULT)
+                }catch(e:Exception){
+                    Toast.makeText(applicationContext,getString(R.string.notAppCamera),Toast.LENGTH_LONG).show()
+                }
+
             }
             else
                 Toast.makeText(applicationContext,R.string.eror_input_name,Toast.LENGTH_LONG).show()

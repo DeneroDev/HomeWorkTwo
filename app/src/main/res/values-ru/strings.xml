@@ -4,4 +4,5 @@
     <string name="input_name">Введи Имя</string>
     <string name="take_photo">Сделать фото</string>
     <string name="eror_input_name">Введите имя!</string>
+    <string name="notAppCamera">Нет приложения камеры</string>
 </resources>

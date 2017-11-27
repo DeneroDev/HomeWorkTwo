@@ -3,4 +3,5 @@
     <string name="input_name">Name</string>
     <string name="take_photo">Take Photo</string>
     <string name="eror_input_name">Input Name!</string>
+    <string name="notAppCamera">No Camera Application</string>
 </resources>
